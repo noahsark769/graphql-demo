@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from demo.views import query
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^query', query),
 ]
